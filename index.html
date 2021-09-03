@@ -24,8 +24,8 @@
 
             <nav>
                 <ul class="navigation">
-                    <li class="navigation-item">
-                        <a href="#" class="navigation-item-content">
+                    <li class="navigation-item active">
+                        <a href="#" class="navigation-item-content active">
                             Студия</a>
                     </li>
 
@@ -66,7 +66,16 @@
     <section class="section hero">
         <div class="container">
             <h1>Эффективные решения<br> для вашего бизнеса</h1>
-            <button class="btn" type="button">Заказать услугу</button>
+            <button data-modal-open class="btn" type="button">Заказать услугу</button>
+            <div data-modal class="backdrop is-hidden">
+                <div class="modal-window">
+                    <button data-modal-close type="button" class="close-btn">
+                        <svg class="close-icon" width="11" height="11">
+                            <use href="./images/sprite.svg#icon-vector"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -408,6 +417,7 @@
 
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
